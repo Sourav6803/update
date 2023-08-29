@@ -36,7 +36,6 @@ function App() {
           <Route path="services" element={<Services />} />
           <Route path="blog" element={<Blog />} />
           <Route path="my-profile" element={<PrivateRoutes><Profile /></PrivateRoutes>} />
-          
           <Route path="Login" element={<OpenRoutes><Login /></OpenRoutes>} />
           <Route path="forgot-password" element={<Forgotpassword />} />
           <Route path="signup" element={<OpenRoutes><Singnup /></OpenRoutes>} />
