@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs'
 import { useDispatch, useSelector } from 'react-redux';
-import { Typeahead } from 'react-bootstrap-typeahead'; 
+ 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { getAProduct } from '../features/product/productSlice';
 import { toast } from 'react-toastify';
@@ -67,20 +67,20 @@ const Header = () => {
             <div className='col-6'>
               <div className='header-upper-links d-flex align-items-center justify-content-between'>
                 <div>
-                  <Link to="#" className='d-flex align-items-center gap-10 text-white'>
-                    {/* <img src='images/wishlist.svg' width={"30px"} height={"30px"} alt='wishlist' /> */}
+                  <Link to="#" className='d-flex align-items-center gap-5 text-white'>
+                    
                     <p className='mb-0 fw-bold'>Home</p>
                   </Link>
                 </div>
                 <div>
-                  <Link to="/" className='d-flex align-items-center gap-10 text-white'>
-                    {/* <img src='images/user.svg' alt='user' /> */}
+                  <Link to="/" className='d-flex align-items-center gap-5 text-white'>
+                    
                     <p className='mb-0 fw-bold'>About</p>
                   </Link>
                 </div>
                 <div>
                   <Link to="about" className='d-flex align-items-center gap-10 text-white'>
-                    <div className='d-flex flex-column gap-10'>
+                    <div className='d-flex flex-column gap-5'>
                       
                       <p className='mb-0 fw-bold'>Blogs</p>
                     </div>
@@ -88,8 +88,8 @@ const Header = () => {
                 </div>
 
                 <div>
-                  <Link to="/services" className='d-flex align-items-center gap-10 text-white'>
-                    <div className='d-flex flex-column gap-10'>
+                  <Link to="/services" className='d-flex align-items-center gap-5 text-white'>
+                    <div className='d-flex flex-column '>
                       <span className='badge bg-white text-dark'></span>
                       <p className='mb-0 fw-bold'>Services</p>
                     </div>
@@ -97,7 +97,7 @@ const Header = () => {
                 </div>
 
                 <div>
-                  <Link to="/contact" className='d-flex align-items-center gap-10 text-white'>
+                  <Link to="/contact" className='d-flex align-items-center gap-5 text-white'>
                     <div className='d-flex flex-column gap-10'>
                       <p className='mb-0 fw-bold'>Contact</p>
                     </div>
@@ -105,8 +105,8 @@ const Header = () => {
                 </div>
 
                 <div>
-                  <Link to="about" className='d-flex align-items-center S '>
-                    <div className='d-flex flex-column gap-10 box'>
+                  <Link to="about" className='d-flex align-items-center '>
+                    <div className='d-flex flex-column  box'>
                       <p className='mb-0 fw-bold'>HSN Code List</p>
                     </div>
                   </Link>
